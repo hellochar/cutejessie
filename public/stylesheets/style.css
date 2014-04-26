@@ -1,8 +1,41 @@
 body {
-  padding: 50px;
+  padding: 0px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: black;
+  background: black url(/images/ballroom.png) no-repeat center 0;
+  color: white;
+  text-align: center;
+  min-height: 100%;
+  /* overflow: hidden; */
+}
+
+.container {
+    z-index: 10;
+    position: relative;
+}
+
+button {
+    font-size: 5em;
+    padding: .1em;
+    border-radius: 10px;
 }
 
 a {
   color: #00B7FF;
+}
+
+h1 {
+    font-size: 5em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+iframe {
+    display: none;
+}
+
+.no {
+    position: relative;
 }

@@ -1,5 +1,36 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  audio(src="/dream-harp-01.mp3" loop autoplay preload="auto")
+  .masks
+      img(src="images/mask1.png")
+      img(src="images/mask2.png")
+      img(src="images/mask3.png")
+      img(src="images/mask4.png")
+      img(src="images/mask6.png")
+      img(src="images/mask7.png")
+      img(src="images/mask1.png")
+      img(src="images/mask1.png")
+      img(src="images/mask2.png")
+      img(src="images/mask3.png")
+      img(src="images/mask4.png")
+      img(src="images/mask6.png")
+      img(src="images/mask7.png")
+      img(src="images/mask2.png")
+      img(src="images/mask3.png")
+      img(src="images/mask4.png")
+      img(src="images/mask6.png")
+      img(src="images/mask7.png")
+  .container
+      h1 Dear Jessie Yen,
+      img(src="https://scontent-a.xx.fbcdn.net/hphotos-ash3/t1.0-9/1723005_10153815599805713_504037830_n.jpg" width="300px")
+      h2 It would be my pleasure to take you to the 2014 Senior Masquerade Ball this Sunday night. Will you be my date?
+      img(src="https://scontent-a.xx.fbcdn.net/hphotos-frc3/t1.0-9/10154380_10153964037360713_749477330_n.jpg" width="300px")
+      .buttons
+          button(class='yes') Yes
+          button(class='no') No
+
+  iframe(id='yes-iframe' width='720', height='515', src='//www.youtube.com/embed/lvddMttYXSc', frameborder='0', allowfullscreen='allowfullscreen')
+  iframe(id='no-iframe' width='720', height='515', src='//www.youtube.com/embed/YWlvjp70tVU', frameborder='0', allowfullscreen='allowfullscreen')
+
+  script(src="javascripts/main.js")
